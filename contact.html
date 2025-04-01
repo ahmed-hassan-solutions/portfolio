@@ -131,7 +131,7 @@
                 <div class="md:w-2/3 stagger-children">
                     <div class="bg-white p-8 rounded-lg shadow-md hover-lift">
                         <h2 class="text-2xl font-bold text-primary mb-6">Send Us a Message</h2>
-                        <form target="_blank"  id="contactForm" class="space-y-6" method="POST" action="https://formsubmit.co/ahmed.hassan@legalwisesolutions.info">
+                        <form id="contactForm" class="space-y-6" method="POST" action="https://formsubmit.co/ahmed.hassan@legalwisesolutions.info">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label for="firstName" class="block text-gray-700 font-medium mb-2">First
@@ -205,29 +205,7 @@
         </div>
     </section>
 
-    <!-- Map Section -->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-primary text-center mb-8 animate-fade-in">Find Our Office</h2>
-            <div class="bg-gray-200 rounded-lg overflow-hidden h-96 shadow-lg hover-lift animate-fade-in">
-                <!-- This is a placeholder for a map. In a real implementation, you would integrate Google Maps or another mapping service -->
-                <div class="w-full h-full flex items-center justify-center bg-gray-300">
-                    <div class="text-center p-8">
-                        <i class="fas fa-map-marked-alt text-6xl text-accent mb-4 icon-pulse"></i>
-                        <p class="text-lg text-gray-600">Interactive map would be displayed here.<br>33 El-Eahd
-                            El-Gadid, Dokki, Giza, Egypt</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-8 text-center animate-fade-in">
-                <a href="https://maps.google.com" target="_blank"
-                    class="inline-flex items-center text-accent hover:underline animate-underline">
-                    <span>Get directions to our office</span>
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+  
 
     <!-- Footer -->
     <footer class="bg-primary text-white py-12">
@@ -319,6 +297,7 @@
             if (contactForm) {  
                 contactForm.addEventListener('submit', function (e) {
                     alert('Thank you for your inquiry! We will contact you shortly.');
+                });
             }
 
             // Add focus animation to form fields
