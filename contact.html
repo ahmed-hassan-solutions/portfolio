@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Legalwise Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#718096',
+                        accent: '#d69e2e',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold">Legalwise Solutions</div>
+                <div class="hidden md:flex space-x-8 pr-8">
+                    <a href="index.html" class="hover:text-accent transition">Home</a>
+                    <a href="about.html" class="hover:text-accent transition">About</a>
+                    <a href="services.html" class="hover:text-accent transition">Services</a>
+                    <a href="contact.html" class="text-accent transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden py-2">
+                <a href="index.html" class="block py-2 hover:text-accent transition">Home</a>
+                <a href="about.html" class="block py-2 hover:text-accent transition">About</a>
+                <a href="services.html" class="block py-2 hover:text-accent transition">Services</a>
+                <a href="case-studies.html" class="block py-2 hover:text-accent transition">Case Studies</a>
+                <a href="contact.html" class="block py-2 text-accent transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12 animate-fade-in">
+                <h1 class="text-4xl font-bold text-primary mb-4">Contact Legalwise Solutions</h1>
+                <p class="text-gray-600 text-lg">We're here to help with your legal needs. Reach out today.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information and Form Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- Contact Information -->
+                <div class="md:w-1/3 stagger-children">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover-lift">
+                        <h2 class="text-2xl font-bold text-primary mb-6">Office Information</h2>
+
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-primary mb-3">Main Office</h3>
+                            <div class="space-y-4">
+                                <p class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-accent mr-3 mt-1 icon-pulse"></i>
+                                    <span>33 El-Eahd El-Gadid<br>Dokki, Giza, Egypt</span>
+                                </p>
+                                <p class="flex items-center">
+                                    <i class="fas fa-phone text-accent mr-3 icon-pulse"></i>
+                                    <span>+201154002940</span>
+                                </p>
+                                <p class="flex items-center">
+                                    <i class="fas fa-envelope text-accent mr-3 icon-pulse"></i>
+                                    <span>ahmed.hassan@legalwisesolutions.info</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-primary mb-3">Office Hours</h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between">
+                                    <span>Monday - Thursday:</span>
+                                    <span class="font-medium">9:00 AM - 5:30 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Friday:</span>
+                                    <span class="font-medium">9:00 AM - 12:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Saturday - Sunday:</span>
+                                    <span class="font-medium">Closed</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-3">Connect With Us</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/profile.php?id=61559968918251"
+                                    class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition icon-pulse">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ahmed-hassan-4171001a7"
+                                    class="bg-blue-700 hover:bg-blue-800 text-white p-2 rounded-full transition icon-pulse">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="md:w-2/3 stagger-children">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover-lift">
+                        <h2 class="text-2xl font-bold text-primary mb-6">Send Us a Message</h2>
+                        <form id="contactForm" class="space-y-6" method="POST" action="https://formsubmit.co/ahmed.hassan@legalwisesolutions.info">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="firstName" class="block text-gray-700 font-medium mb-2">First
+                                        Name</label>
+                                    <input type="text" id="firstName" name="firstName"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition"
+                                        required>
+                                </div>
+                                <div>
+                                    <label for="lastName" class="block text-gray-700 font-medium mb-2">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email
+                                        Address</label>
+                                    <input type="email" id="email" name="email"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition"
+                                        required>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Legal Service
+                                    Needed</label>
+                                <select id="service" name="service" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition">
+                                    <option value="">Select a service</option>
+                                    <option value="contract">Contract & Property Law</option>
+                                    <option value="family">Family Law</option>
+                                    <option value="immigration">Immigration Law</option>
+                                    <option value="labor">Labor & Social Security</option>
+                                    <option value="safeguarding">Child Safeguarding</option>
+                                    <option value="ngo">NGO & Charity Services</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition"
+                                    required></textarea>
+                            </div>
+
+                            <div class="flex items-center">
+                                <input type="checkbox" id="consent" name="consent" class="mr-2" required>
+                                <label for="consent" class="text-gray-700">I agree to the privacy policy and consent to
+                                    being contacted regarding my inquiry.</label>
+                            </div>
+
+                            <div>
+                                <button type="submit"
+                                    class="bg-accent hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 btn-animated hover-glow">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary text-center mb-8 animate-fade-in">Find Our Office</h2>
+            <div class="bg-gray-200 rounded-lg overflow-hidden h-96 shadow-lg hover-lift animate-fade-in">
+                <!-- This is a placeholder for a map. In a real implementation, you would integrate Google Maps or another mapping service -->
+                <div class="w-full h-full flex items-center justify-center bg-gray-300">
+                    <div class="text-center p-8">
+                        <i class="fas fa-map-marked-alt text-6xl text-accent mb-4 icon-pulse"></i>
+                        <p class="text-lg text-gray-600">Interactive map would be displayed here.<br>33 El-Eahd
+                            El-Gadid, Dokki, Giza, Egypt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center animate-fade-in">
+                <a href="https://maps.google.com" target="_blank"
+                    class="inline-flex items-center text-accent hover:underline animate-underline">
+                    <span>Get directions to our office</span>
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legalwise Solutions</h3>
+                    <p class="text-gray-300 mb-4">
+                        Providing expert legal services with integrity, excellence, and a client-centric approach.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61559968918251" class="text-white hover:text-accent transition icon-pulse">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmed-hassan-4171001a7"
+                            class="text-white hover:text-accent transition icon-pulse">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">About Us</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Services</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Practice Areas -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Practice Areas</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#contract"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Contract & Property
+                                Law</a>
+                        </li>
+                        <li><a href="services.html#family"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Family Law</a></li>
+                        <li><a href="services.html#immigration"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Immigration Law</a>
+                        </li>
+                        <li><a href="services.html#labor"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Labor & Social
+                                Security</a>
+                        </li>
+                        <li><a href="services.html#safeguarding"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Child
+                                Safeguarding</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <div class="space-y-3">
+                        <p class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            <span>33 El-Eahd El-Gadid<br>Dokki, Giza, Egypt</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+201154002940</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>ahmed.hassan@legalwisesolutions.info</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-300">
+                <p>&copy; 2023 Legalwise Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Form submission handler
+        document.addEventListener('DOMContentLoaded', function () {
+            const contactForm = document.getElementById('contactForm');
+
+            if (contactForm) {  
+                contactForm.addEventListener('submit', function (e) {
+                    alert('Thank you for your inquiry! We will contact you shortly.');
+                    contactForm.reset();
+                });
+            }
+
+            // Add focus animation to form fields
+            const formFields = document.querySelectorAll('input:not([type="checkbox"]), textarea, select');
+            formFields.forEach(field => {
+                field.addEventListener('focus', function () {
+                    this.parentElement.classList.add('scale-105');
+                    this.classList.add('shadow-lg');
+                });
+
+                field.addEventListener('blur', function () {
+                    this.parentElement.classList.remove('scale-105');
+                    this.classList.remove('shadow-lg');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

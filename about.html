@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Legalwise Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#718096',
+                        accent: '#d69e2e',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold">Legalwise Solutions</div>
+                <div class="hidden md:flex space-x-8 pr-8">
+                    <a href="index.html" class="hover:text-accent transition">Home</a>
+                    <a href="about.html" class="text-accent transition">About</a>
+                    <a href="services.html" class="hover:text-accent transition">Services</a>
+                    <a href="contact.html" class="hover:text-accent transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden py-2">
+                <a href="index.html" class="block py-2 hover:text-accent transition">Home</a>
+                <a href="about.html" class="block py-2 text-accent transition">About</a>
+                <a href="services.html" class="block py-2 hover:text-accent transition">Services</a>
+                <a href="case-studies.html" class="block py-2 hover:text-accent transition">Case Studies</a>
+                <a href="contact.html" class="block py-2 hover:text-accent transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12 animate-fade-in">
+                <h1 class="text-4xl font-bold text-primary mb-4 slide-in-left">About Legalwise Solutions</h1>
+                <p class="text-gray-600 text-lg slide-in-right">Together we can achieve more</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8 img-hover-zoom animate-fade-in">
+                    <img src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+                        alt="Law Office"
+                        class="rounded-lg shadow-xl w-full h-auto hover-shadow transition duration-500">
+                </div>
+                <div class="md:w-1/2 md:pl-8 stagger-children">
+                    <h2 class="text-2xl font-bold text-primary mb-4 slide-in-right">Our Story</h2>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Founded by Ahmed Hassan, Legalwise Solutions is a trusted legal advisory firm providing expert
+                        services
+                        in human resources, child safeguarding, and organizational development. With over a decade of
+                        experience
+                        as an HROD Consultant and Legal Advisor, I has built the firm on a foundation of integrity,
+                        excellence,
+                        and client-centric service.
+                    </p>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Our expertise spans multiple areas including contract law, property law, family law, labor and
+                        social security law,
+                        human rights advocacy, and child protection. We serve various sectors with a commitment to
+                        delivering personalized legal solutions tailored to each client's unique needs.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        At Legalwise Solutions, we combine professional expertise with a compassionate approach,
+                        ensuring our clients receive comprehensive guidance through complex legal landscapes.
+                        Our mission is to help individuals and organizations make informed decisions and protect
+                        their interests with expert legal advice.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12 animate-fade-in">Our Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger-children">
+                <!-- Value 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover-shadow transition service-card hover-lift">
+                    <div class="text-accent text-4xl mb-4 icon-pulse">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Integrity</h3>
+                    <p class="text-gray-600">
+                        We prioritize honesty, ethical behavior, and transparency in all our interactions and
+                        decision-making processes, ensuring clients can trust our advice and services.
+                    </p>
+                </div>
+                <!-- Value 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover-shadow transition service-card hover-lift">
+                    <div class="text-accent text-4xl mb-4 icon-pulse">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Excellence</h3>
+                    <p class="text-gray-600">
+                        We are committed to maintaining the highest standards of professionalism and expertise
+                        in our legal services, ensuring quality outcomes for our clients.
+                    </p>
+                </div>
+                <!-- Value 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover-shadow transition service-card hover-lift">
+                    <div class="text-accent text-4xl mb-4 icon-pulse">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Client-Centricity</h3>
+                    <p class="text-gray-600">
+                        We put our clients first, striving to understand their needs, provide tailored solutions,
+                        and deliver exceptional service to exceed their expectations.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 stagger-children">
+                <!-- Value 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover-shadow transition service-card hover-lift">
+                    <div class="text-accent text-4xl mb-4 icon-pulse">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Respect</h3>
+                    <p class="text-gray-600">
+                        We value diversity, inclusivity, and mutual respect among our team members, clients, and
+                        stakeholders,
+                        recognizing the importance of dignified treatment for all.
+                    </p>
+                </div>
+                <!-- Value 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover-shadow transition service-card hover-lift">
+                    <div class="text-accent text-4xl mb-4 icon-pulse">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Continuous Learning</h3>
+                    <p class="text-gray-600">
+                        We promote a culture of learning and development to stay updated with legal trends and best
+                        practices,
+                        offering innovative solutions to address evolving challenges.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Vision -->
+                <div class="md:w-1/2 bg-gray-50 p-8 rounded-lg shadow-md hover-shadow transition hover-lift">
+                    <div class="text-accent text-4xl mb-4 icon-pulse">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-primary mb-4">Our Vision</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        To be the most trusted and respected legal advisory firm, known for providing expert
+                        and reliable guidance to clients in navigating legal challenges and achieving their
+                        goals with integrity and excellence.
+                    </p>
+                </div>
+                <!-- Mission -->
+                <div class="md:w-1/2 bg-gray-50 p-8 rounded-lg shadow-md hover-shadow transition hover-lift">
+                    <div class="text-accent text-4xl mb-4 icon-pulse">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-primary mb-4">Our Mission</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        To deliver personalized legal solutions that meet the unique needs of our clients, offering
+                        expert advice and representation to help them make informed decisions and protect
+                        their interests in a complex legal landscape.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Sectors -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12 animate-fade-in">Activity Sectors</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 stagger-children">
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-accent text-3xl mb-3">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Safeguarding & Protection</h3>
+                    <p class="text-gray-600">Investigation services for organizations to ensure child protection and
+                        safety.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-accent text-3xl mb-3">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Contract & Property Law</h3>
+                    <p class="text-gray-600">Expert legal guidance for contracts, property transactions, and
+                        documentation.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-accent text-3xl mb-3">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Policy & Regulation</h3>
+                    <p class="text-gray-600">Review and update internal regulations and policies to ensure compliance.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-accent text-3xl mb-3">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Immigration Law</h3>
+                    <p class="text-gray-600">Assistance with immigration processes, visas, and legal requirements.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-accent text-3xl mb-3">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Family Law</h3>
+                    <p class="text-gray-600">Compassionate guidance on family matters with a focus on dignified
+                        solutions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-accent text-3xl mb-3">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Labor & Social Security</h3>
+                    <p class="text-gray-600">Expert advice on employment contracts, labor disputes, and social security
+                        issues.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-accent text-3xl mb-3">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Human Rights</h3>
+                    <p class="text-gray-600">Advocacy and legal representation in human rights and child safeguarding
+                        cases.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-accent text-3xl mb-3">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Charity Law</h3>
+                    <p class="text-gray-600">Legal support for charitable organizations and non-profit entities.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                    <div class="text-accent text-3xl mb-3">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">NGO Assessment</h3>
+                    <p class="text-gray-600">Evaluation and monitoring services for non-governmental organizations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center animate-fade-in">
+            <h2 class="text-3xl font-bold text-primary mb-6 slide-in-left">Ready to Discuss Your Legal Needs?</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto mb-8 slide-in-right">
+                Our experienced legal team is ready to help you navigate your legal challenges with expertise and
+                dedication. Contact us today to schedule a consultation.
+            </p>
+            <a href="contact.html"
+                class="bg-accent hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block btn-animated hover-glow">
+                Schedule a Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legalwise Solutions</h3>
+                    <p class="text-gray-300 mb-4">
+                        Providing expert legal services with integrity, excellence, and a client-centric approach.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-accent transition icon-pulse">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-accent transition icon-pulse">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmed-hassan-4171001a7"
+                            class="text-white hover:text-accent transition icon-pulse">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">About Us</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Services</a></li>
+                        <li><a href="case-studies.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Case Studies</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Practice Areas -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Practice Areas</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#contract"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Contract & Property
+                                Law</a>
+                        </li>
+                        <li><a href="services.html#family"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Family Law</a></li>
+                        <li><a href="services.html#immigration"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Immigration Law</a>
+                        </li>
+                        <li><a href="services.html#labor"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Labor & Social
+                                Security</a>
+                        </li>
+                        <li><a href="services.html#safeguarding"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Child
+                                Safeguarding</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <div class="space-y-3">
+                        <p class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            <span>33 El-Eahd El-Gadid<br>Dokki, Giza, Egypt</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+201154002940</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>ahmed.hassan@legalwisesolutions.info</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-300">
+                <p>&copy; 2023 Legalwise Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

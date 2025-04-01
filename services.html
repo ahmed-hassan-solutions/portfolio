@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Legalwise Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#718096',
+                        accent: '#d69e2e',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold">Legalwise Solutions</div>
+                <div class="hidden md:flex space-x-8 pr-8">
+                    <!-- Added pr-4 to add padding to the right -->
+                    <a href="index.html" class="hover:text-accent transition">Home</a>
+                    <a href="about.html" class="hover:text-accent transition">About</a>
+                    <a href="services.html" class="text-accent transition">Services</a>
+                    <a href="contact.html" class="hover:text-accent transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden py-2">
+                <a href="index.html" class="block py-2 hover:text-accent transition">Home</a>
+                <a href="about.html" class="block py-2 hover:text-accent transition">About</a>
+                <a href="services.html" class="block py-2 text-accent transition">Services</a>
+                <a href="case-studies.html" class="block py-2 hover:text-accent transition">Case Studies</a>
+                <a href="contact.html" class="block py-2 hover:text-accent transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12 animate-fade-in">
+                <h1 class="text-4xl font-bold text-primary mb-4">Our Legal Services</h1>
+                <p class="text-gray-600 text-lg">Comprehensive legal and HR solutions tailored to your specific needs
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <div class="img-hover-zoom animate-fade-in">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="Legal Services" class="rounded-lg shadow-xl w-full max-w-4xl h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contract & Property Law Section -->
+    <section id="contract" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 animate-fade-in">
+                    <div class="text-accent text-6xl mb-6 text-center md:text-left icon-pulse">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-primary mb-4 text-center md:text-left">Contract & Property Law
+                    </h2>
+                </div>
+                <div class="md:w-2/3 md:pl-12 stagger-children">
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Our contract and property law services are designed to protect your interests in all types of
+                        transactions
+                        and property matters. We provide expert guidance on contract formation, property acquisitions,
+                        and legal documentation
+                        with a focus on compliance and risk management.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Contract Review & Drafting</h3>
+                            <p class="text-gray-600">
+                                Comprehensive contract services including negotiation, drafting, and review to protect
+                                your interests and ensure legal compliance.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Property Transactions</h3>
+                            <p class="text-gray-600">
+                                Legal guidance for buying, selling, and leasing both residential and commercial
+                                properties with attention to detail.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Legal Documentation</h3>
+                            <p class="text-gray-600">
+                                Preparation and review of legal documents to ensure clarity, enforceability, and
+                                protection of your rights.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Dispute Resolution</h3>
+                            <p class="text-gray-600">
+                                Strategic counsel for resolving contract disputes and property conflicts through
+                                negotiation or legal action.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Law Section -->
+    <section id="family" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 md:pl-12 animate-fade-in">
+                    <div class="text-accent text-6xl mb-6 text-center md:text-right icon-pulse">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-primary mb-4 text-center md:text-right">Family Law</h2>
+                </div>
+                <div class="md:w-2/3 md:pr-12 stagger-children">
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Family legal matters require a delicate balance of compassion and legal expertise. Our approach
+                        to family law provides supportive guidance through emotionally challenging situations while
+                        vigorously advocating for fair and dignified resolutions.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Divorce Proceedings</h3>
+                            <p class="text-gray-600">
+                                Compassionate representation through divorce, with a focus on fair settlements and
+                                minimal conflict for all parties involved.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Child Custody Matters</h3>
+                            <p class="text-gray-600">
+                                Child-centered advocacy to establish custody arrangements that serve your
+                                children's best interests and protect their wellbeing.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Family Dispute Resolution</h3>
+                            <p class="text-gray-600">
+                                Mediation and conflict resolution services for family disagreements, helping to find
+                                amicable solutions.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Marriage Contracts</h3>
+                            <p class="text-gray-600">
+                                Customized prenuptial and marriage agreements to protect assets and provide security
+                                for both parties while planning for the future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Immigration Law Section -->
+    <section id="immigration" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 animate-fade-in">
+                    <div class="text-accent text-6xl mb-6 text-center md:text-left icon-pulse">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-primary mb-4 text-center md:text-left">Immigration Law</h2>
+                </div>
+                <div class="md:w-2/3 md:pl-12 stagger-children">
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Navigating immigration processes requires precise knowledge of complex regulations and
+                        procedures.
+                        Our immigration law services provide clear guidance and support throughout your immigration
+                        journey,
+                        helping you achieve your goals with confidence.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Visa Applications</h3>
+                            <p class="text-gray-600">
+                                Comprehensive assistance with various visa categories, ensuring complete and accurate
+                                applications.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Residence Permits</h3>
+                            <p class="text-gray-600">
+                                Expert guidance on obtaining and renewing residence permits with attention to legal
+                                requirements.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Immigration Compliance</h3>
+                            <p class="text-gray-600">
+                                Advice for individuals and organizations on maintaining compliance with immigration
+                                regulations.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Legal Representation</h3>
+                            <p class="text-gray-600">
+                                Representation in immigration-related hearings and appeals when challenges or
+                                complications arise.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Labor & Social Security Law Section -->
+    <section id="labor" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 md:pl-12 animate-fade-in">
+                    <div class="text-accent text-6xl mb-6 text-center md:text-right icon-pulse">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-primary mb-4 text-center md:text-right">Labor & Social Security
+                        Law</h2>
+                </div>
+                <div class="md:w-2/3 md:pr-12 stagger-children">
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Employment relationships and social security matters involve important rights and obligations
+                        for both
+                        employers and employees. Our labor law services ensure fair treatment, legal compliance, and
+                        protection of rights in the workplace and beyond.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Employment Contracts</h3>
+                            <p class="text-gray-600">
+                                Drafting and review of employment contracts that protect interests while ensuring legal
+                                compliance.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Workplace Policies</h3>
+                            <p class="text-gray-600">
+                                Development of HR policies and employee handbooks that establish clear guidelines and
+                                protect organizations.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Labor Disputes</h3>
+                            <p class="text-gray-600">
+                                Resolution of workplace conflicts and representation in labor-related legal proceedings.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Social Security Benefits</h3>
+                            <p class="text-gray-600">
+                                Guidance on social security matters, including benefits claims and compliance with
+                                social insurance obligations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Child Safeguarding Section -->
+    <section id="safeguarding" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 animate-fade-in">
+                    <div class="text-accent text-6xl mb-6 text-center md:text-left icon-pulse">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-primary mb-4 text-center md:text-left">Child Safeguarding & Human
+                        Rights</h2>
+                </div>
+                <div class="md:w-2/3 md:pl-12 stagger-children">
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Protecting children and upholding human rights are fundamental responsibilities for
+                        organizations and society.
+                        Our specialized services in child safeguarding and human rights advocacy provide expert
+                        guidance, investigation capabilities,
+                        and policy development to ensure protection and compliance.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Child Protection Investigations</h3>
+                            <p class="text-gray-600">
+                                Professional investigation services to address child protection concerns with
+                                sensitivity and thoroughness.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Safeguarding Policies</h3>
+                            <p class="text-gray-600">
+                                Development of comprehensive child safeguarding policies and procedures for
+                                organizations.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Human Rights Advocacy</h3>
+                            <p class="text-gray-600">
+                                Legal representation and advocacy in human rights cases, ensuring fair treatment and
+                                justice.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Organizational Risk Management</h3>
+                            <p class="text-gray-600">
+                                Assessment and mitigation of risks related to child protection and human rights in
+                                organizational settings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NGO Services Section -->
+    <section id="ngo" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 md:pl-12 animate-fade-in">
+                    <div class="text-accent text-6xl mb-6 text-center md:text-right icon-pulse">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-primary mb-4 text-center md:text-right">NGO & Charity Services
+                    </h2>
+                </div>
+                <div class="md:w-2/3 md:pr-12 stagger-children">
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Non-governmental and charitable organizations face unique legal and operational challenges. Our
+                        specialized
+                        services help these organizations fulfill their missions while maintaining legal compliance,
+                        good governance,
+                        and effective operations.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">NGO Assessment</h3>
+                            <p class="text-gray-600">
+                                Comprehensive evaluation of NGO operations, governance structures, and program
+                                effectiveness.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Charity Law Compliance</h3>
+                            <p class="text-gray-600">
+                                Legal guidance on regulatory requirements for charitable organizations to maintain legal
+                                status.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Monitoring & Evaluation</h3>
+                            <p class="text-gray-600">
+                                Development and implementation of monitoring systems to track program impact and
+                                effectiveness.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-lift">
+                            <h3 class="text-xl font-bold text-primary mb-3">Internal Regulations</h3>
+                            <p class="text-gray-600">
+                                Review and updating of internal regulations and policies to ensure good governance and
+                                legal compliance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4 text-center animate-fade-in">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Discuss Your Legal Needs?</h2>
+            <p class="text-gray-300 max-w-3xl mx-auto mb-8">
+                Our expert team is ready to provide the legal guidance you need. Schedule a consultation today to
+                discuss your specific situation and how we can help you navigate complex legal challenges.
+            </p>
+            <a href="contact.html"
+                class="bg-accent hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block btn-animated hover-glow">
+                Schedule a Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legalwise Solutions</h3>
+                    <p class="text-gray-300 mb-4">
+                        Providing expert legal services with integrity, excellence, and a client-centric approach.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-accent transition icon-pulse">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-accent transition icon-pulse">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmed-hassan-4171001a7"
+                            class="text-white hover:text-accent transition icon-pulse">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">About Us</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Services</a></li>
+                        <li><a href="case-studies.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Case Studies</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Practice Areas -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Practice Areas</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#contract"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Contract & Property
+                                Law</a>
+                        </li>
+                        <li><a href="#family"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Family Law</a></li>
+                        <li><a href="#immigration"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Immigration Law</a>
+                        </li>
+                        <li><a href="#labor" class="text-gray-300 hover:text-accent transition animate-underline">Labor
+                                & Social Security</a>
+                        </li>
+                        <li><a href="#safeguarding"
+                                class="text-gray-300 hover:text-accent transition animate-underline">Child
+                                Safeguarding</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <div class="space-y-3">
+                        <p class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            <span>33 El-Eahd El-Gadid<br>Dokki, Giza, Egypt</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+201154002940</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>ahmed.hassan@legalwisesolutions.info</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-300">
+                <p>&copy; 2023 Legalwise Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
